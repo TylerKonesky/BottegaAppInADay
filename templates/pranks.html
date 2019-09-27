@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/12cf043f10.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/pranks.css">
-    <link rel="stylesheet" href="../static/pranks.css">
+    <link rel="stylesheet" href="../static/main.css">
     
 </head>
 <body>
@@ -44,11 +44,14 @@
            
     </div>
 
-    
+    <div class="main-pranks-wrapper">
+        
+    </div>
     
 </body>
 
 <script>
+
     const pranks = [
     {"title": "Prank one",
     "rules": "set of rules",
@@ -104,7 +107,7 @@
     "person": "teacher",
     "difficulty": 2
     },
-    {"title": "Prank 10",
+    {"title": "Prank ten",
     "rules": "set of rules",
     "location": "public",
     "person": "cop",
@@ -117,5 +120,51 @@
     "difficulty": 1
     }
     ]
+
+    for (var i = 0; i < pranks.length; i++){
+        parent = document.querySelector(".main-pranks-wrapper");
+        new_title = document.createElement("h1");
+        new_title.className = "prank_title"
+        new_title.id = i
+        new_title.innerHTML =pranks[i].title
+
+        prank_info = document.createElement("p")
+        prank_info.className = "prank_info"
+        prank_info.style.display = "none"
+        
+        prank_rules = document.createElement("span")
+        prank_rules.className = "prank_rules"
+        prank_rules.innerHTML = pranks[i].rules
+        prank_location= document.createElement("span")
+        prank_location.className = "prank_location"
+        prank_location.innerHTML = pranks[i].location
+        prank_person =  document.createElement("span")
+        prank_person.className = "prank_location"
+        prank_person.innerHTML = pranks[i].person
+        prank_difficulty = document.createElement("span")
+        prank_difficulty.className = "prank_difficulty"
+        prank_difficulty.innerHTML = pranks[i].difficulty
+
+        prank_info.appendChild(prank_rules)
+        prank_info.appendChild(prank_location)
+        prank_info.appendChild(prank_person)
+        prank_info.appendChild(prank_difficulty)
+        new_title.appendChild(prank_info)
+
+        new_title.addEventListener('click', (event) => {
+            if (event.target.childNodes[1].style.display == "block") {
+                event.target.childNodes[1].style.display = "none"
+            }else if (event.target.childNodes[1].style.display == "none"){
+                event.target.childNodes[1].style.display ="block"
+            }            console.log(event.target.childNodes[1].style.display)
+        })
+
+
+        parent.appendChild(new_title)
+        
+
+    }
+
+
 </script>
 </html>
