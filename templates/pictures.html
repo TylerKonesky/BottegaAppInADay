@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../static/main.css">
     <link rel="stylesheet" type="text/css" href="../static/pictures.css">   
-    <title>Pictures</title>
+    <title>CowboyClick</title>
     <script src="https://kit.fontawesome.com/12cf043f10.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
 
@@ -65,7 +66,7 @@
                 </div>
                 
                 <div class="square-text-wrapper">
-                    <p>
+                    <p class="text">
                         Ho ho! This sure is one funny monkey! ha! Look at this guy! I can't BELIEVE what I'm seeing! So funny! wow
                     </p>
 
@@ -77,7 +78,7 @@
 
                 
                 <div class="square-text-wrapper">
-                 <p>
+                 <p class="text">
                      Whoa okay... this woman is being a tad bit aggressive. I'm not so sure I'm comfortable with what's going on here... kinda wack.
                  </p>
                 </div>
@@ -93,20 +94,20 @@
                     </div>
                     
                     <div class="square-text-wrapper">
-                        <p>
+                        <p class="text">
                             Ha ha! I think we ALL know what's going on here! No explanation needed! 
                         </p>
     
                     </div>
                 </div>
 
-                <div class="square">
+                <div class="square" id="squareJS">
                         <!-- IMG goes here -->
         
                         
                         <div class="square-text-wrapper">
-                         <p>
-                             Holy moly... now that's one gosh darned handsome devil! AWGOOA! Hide your girlfriends, boys!
+                         <p class="text">
+                             Holy moly... now that's one gosh darned handsome devil! AWOOGA! Hide your girlfriends, boys!
                          </p>
                         </div>
                         <div class="img-wrapper" id="right">
@@ -117,17 +118,70 @@
                     <div class="square">
                             <!-- IMG goes here -->
                             <div class="img-wrapper" id="left">
-                                <img src="/static/Images/cropped-ryan-black-vest-e14718868048492.png" alt="PizzaMaam">
+                                <img onclick="newSquare()" src="/static/Images/cropped-ryan-black-vest-e14718868048492.png" alt="PizzaMaam">
                             </div>
                             
                             <div class="square-text-wrapper">
-                                <p>
+                                <p class="text">
                                    Whoa! Is that THE Ryan Curtis? Looking kinda of fresh tho, can't lie.
                                 </p>
             
                             </div>
                         </div>
-        
 
+
+
+        <!-- Footer -->
+                        <div class="footer">
+                                <div class="logo-footer">
+                                    <img src="../static/Images/Logo-transp2_clipped_rev_1.png" alt="Logo">
+                                </div>
+                            
+                                <div class="footer-links">
+                                    <div class="homepage_link">
+                                        <a href="home.html">Home</a>
+                                    </div>
+                                    <div class="pictures_link">
+                                        <a href="pictures.html">Pictures</a>
+                                    </div>
+                                    <div class="pranks">
+                                        <a href="pranks.html">Pranks</a> 
+                                        </div>    
+                                </div>
+                            
+                                <div class="disclosure">
+                                    <p>
+                                        Pranksters Is Not Responisble For The Following:
+                                        <br>
+                                        Expulsion from School, Divorce, Jail Time, Loss of Employment, ect...
+                                        </br>
+                                    </p>
+                                </div>
+                            </div>
 </body>
+
+<script>
+// const textValues = document.querySelectorAll('.text')
+        
+//  for (var i = 0; i < textValues.length; i++ ) {
+//     textValues[i].addEventListener('mouseover', event => {
+//         event.target.style.color = '#ffffdf'
+//     } )
+
+//     textValues[i].addEventListener('mouseleave', event => {
+//         event.target.style.color = '#6C40AD'
+//     })
+//  }
+
+function newSquare() {
+    // console.log('hello');
+    window.alert('Ladies, for a good time message:\nryan.curtis88@gmail.com\n               ;)')
+  
+
+}
+
+        
+        
+        
+</script>
 </html>

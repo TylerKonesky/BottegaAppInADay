@@ -78,3 +78,44 @@ body {
     justify-content: center;
  
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6C40AD;
+    height: 300px;
+    margin-top: -4px;
+    color: #FFED4F;
+    font-size: 0.8em;
+}
+.footer .logo-footer img {
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #FFED4F;
+    text-decoration: none;
+    padding-right: 10px; 
+}
+
+.footer-links a:hover {
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.footer .disclosure {
+    color: #FFED4F;
+    font-family: 'Nanum Gothic', sans-serif;
+}
