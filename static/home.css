@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    background-color: #FFED4F;
+}
+
+.daily-prank {
+    display: flex;
+    justify-content: center;
+}
+
+.daily-prank .prank-txt h1 {
+    color: #6C40AD;
+}
+
+.daily-prank .prank-txt p {
+    position: relative;
+    left: 55px;
+    color: #6C40AD;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFED4F;
+    height: 300px;
+    margin-top: -4px;
+}
+
+.footer .disclosure {
+    color: #6C40AD;
+}
