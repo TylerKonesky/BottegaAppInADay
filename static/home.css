@@ -8,10 +8,15 @@ body {
     height: 500px;
 }
 
-.logo {
+.center-logo {
     display: flex;
     justify-content: center;
 }
+
+.center-logo img {
+    height: 250px;
+}
+
 .daily-prank {
     display: flex;
     justify-content: center;
@@ -19,12 +24,20 @@ body {
 
 .daily-prank .prank-txt h1 {
     color: #6C40AD;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 .daily-prank .prank-txt p {
     position: relative;
     left: 55px;
     color: #6C40AD;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: 0.5s;
+}
+
+.daily-prank .prank-txt p:hover {
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
 .footer {
@@ -38,6 +51,11 @@ body {
     color: #FFED4F;
     font-size: 0.8em;
 }
+.footer .logo-footer img {
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+}
 
 .footer-links {
     display: flex;
@@ -46,6 +64,19 @@ body {
     margin-bottom: 15px;
 }
 
+.footer-links a {
+    color: #FFED4F;
+    text-decoration: none;
+    padding-right: 10px; 
+}
+
+.footer-links a:hover {
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
 .footer .disclosure {
     color: #FFED4F;
+    font-family: 'Nanum Gothic', sans-serif;
 }
