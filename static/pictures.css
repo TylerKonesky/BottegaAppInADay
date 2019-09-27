@@ -40,9 +40,6 @@ body {
     
 }
 
-.square > .img-wrapper {
-        /* border: 2px solid #6C40AD; */
-}
 
 .squares-wrapper > .squares > .square > .square-text-wrapper {
     
@@ -59,4 +56,19 @@ body {
 
 #left {
     background-color: #ffffc9;
+}
+
+.header-wrapper {
+    margin-top: 35px;
+    background-color: #ffffdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 600px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
 }
