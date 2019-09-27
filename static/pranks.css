@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.navbar-wrapper {
+    height: 95px;
+    background-color:#FFED4d;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
+}
+
+.left_side {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 200px;
+    height: 95px;
+}
+
+.logo {
+    font-size: 3em;
+    padding-left: 30px;
+    padding-right: 10px;
+    text-decoration: none;
+    
+}
+
+.logo  {
+    color: #6C40AD;
+    transition: all 1s ease-in-out;;
+}
+
+.logo :hover{
+    transform: scale(1.1);
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 95px;
+}
+.company_name{
+    padding:2px;
+    color: #6C40AD;
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+
+.right_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+}
+.right_side > .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 1.25em;
+
+}
+
+.right_side > .links a{
+    display: flex;
+    justify-content: center; 
+    text-decoration: none;
+    color:#6C40AD;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.right_side > .links a:hover{
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+}
+
