@@ -1,84 +1,67 @@
-body {
-    margin: 0px;
+.prank_title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'M PLUS 1p', sans-serif;
-}
-
-.navbar-wrapper {
-    height: 95px;
-    background-color:#FFED4d;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px;
-}
-
-.left_side {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 200px;
-    height: 95px;
-}
-
-.logo {
-    font-size: 3em;
-    padding-left: 30px;
-    padding-right: 10px;
-    text-decoration: none;
+    border-bottom: 2px solid #6C40AD;
+    box-shadow:0px 3px 3px 0px rgba(0,0,0,0.25);
+    padding-bottom: 10px;
     
 }
 
-.logo  {
-    color: #6C40AD;
-    transition: all 1s ease-in-out;;
+.prank_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'M PLUS 1p', sans-serif;
+    width: 100%;
+    border: 2px solid #6C40AD;
+    border-bottom: transparent;
 }
 
-.logo :hover{
-    transform: scale(1.1);
+.prank_rules{
+    margin-top: 20px;
 }
 
-.middle {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 95px;
+    flex-direction: column;
+    background-color: #6C40AD;
+    height: 300px;
+    margin-top: -4px;
+    color: #FFED4F;
+    font-size: 0.8em;
 }
-.company_name{
-    padding:2px;
-    color: #6C40AD;
-    font-size: 1.5rem;
-    font-weight: 900;
-    
+.footer .logo-footer img {
+    height: 100px;
+    position: relative;
+    bottom: 10px;
 }
 
-.right_side {
+.footer-links {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 95px;
-}
-.right_side > .links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    font-size: 1.25em;
-
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.right_side > .links a{
-    display: flex;
-    justify-content: center; 
+.footer-links a {
+    color: #FFED4F;
     text-decoration: none;
-    color:#6C40AD;
-    padding-right: 10px;
+    padding-right: 10px; 
+}
+
+.footer-links a:hover {
     transition: 0.5s;
-}
-
-.right_side > .links a:hover{
-    font-weight: 900;
     letter-spacing: 2px;
-    
+    font-weight: 700;
 }
 
+.footer .disclosure {
+    color: #FFED4F;
+    font-family: 'Nanum Gothic', sans-serif;
+}

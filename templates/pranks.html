@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pranks</title>
 
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Nanum+Gothic&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/12cf043f10.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/pranks.css">
-    <link rel="stylesheet" href="../static/pranks.css">
-    
+    <link rel="stylesheet" href="../static/main.css">
+
 </head>
 <body>
     <div class="navbar-wrapper">
@@ -44,33 +45,67 @@
            
     </div>
 
-    
+    <div class="main-pranks-wrapper">
+        <div class="main_pranks">
+            
+            <div class="main_pranks_info">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="logo-footer">
+        <img src="../static/Images/Logo-transp2_clipped_rev_1.png" alt="Logo">
+    </div>
+
+    <div class="footer-links">
+        <div class="homepage_link">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="pictures_link">
+            <a href="pictures.html">Pictures</a>
+        </div>
+        <div class="pranks">
+            <a href="pranks.html">Pranks</a> 
+            </div>    
+    </div>
+
+    <div class="disclosure">
+        <p>
+            Pranksters Is Not Responisble For The Following:
+            <br>
+            Expulsion from School, Divorce, Jail Time, Loss of Employment, ect...
+            </br>
+        </p>
+    </div>
+</div>
     
 </body>
 
 <script>
+
     const pranks = [
-    {"title": "Prank one",
-    "rules": "set of rules",
+    {"title": "Delete the Bottega Git Hub Repository",
+    "rules": "No rules",
     "location": "work",
-    "person": "co-worker",
+    "person": "Alex Jones",
     "difficulty": 5
     },
-    {"title": "Prank Two",
-    "rules": "set of rules",
+    {"title": "Replace the wifi the day before class starts",
+    "rules": "make sure the the wifi only works 30% of the time",
     "location": "school",
     "person": "Peer",
     "difficulty": 4
     },
-    {"title": "Prank Three",
-    "rules": "set of rules",
+    {"title": "Spider in cup",
+    "rules": 'Place an empty cup labled "DO NOT LIFT UNTIL READY TO KILL SPIDER!" upside down on the counter',
     "location": "Home",
     "person": "Brother",
-    "difficulty": 5
+    "difficulty": 2
     },
-    {"title": "Prank four",
-    "rules": "set of rules",
-    "location": "home",
+    {"title": "Spike the bagels with laxatives",
+    "rules": "During app of the day spike all the bagles",
+    "location": "",
     "person": "friend",
     "difficulty": 3
     },
@@ -104,7 +139,7 @@
     "person": "teacher",
     "difficulty": 2
     },
-    {"title": "Prank 10",
+    {"title": "Prank ten",
     "rules": "set of rules",
     "location": "public",
     "person": "cop",
@@ -117,5 +152,52 @@
     "difficulty": 1
     }
     ]
+
+    for (var i = 0; i < pranks.length; i++){
+        parent = document.querySelector(".main_pranks");
+        parent_info = document.querySelector(".main_pranks_info")
+        new_title = document.createElement("h1");
+        new_title.className = "prank_title"
+        new_title.id = i
+        new_title.innerHTML =`${pranks[i].title} `
+
+        prank_info = document.createElement("p")
+        prank_info.className = "prank_info"
+        prank_info.style.display = "none"
+        
+        prank_rules = document.createElement("span")
+        prank_rules.className = "prank_rules"
+        prank_rules.innerHTML = `Description: ${pranks[i].rules} ` 
+        prank_location= document.createElement("span")
+        prank_location.className = "prank_location"
+        prank_location.innerHTML = `Location: ${pranks[i].location} `
+        prank_person =  document.createElement("span")
+        prank_person.className = "prank_location"
+        prank_person.innerHTML = `Victim: ${pranks[i].person} `
+        prank_difficulty = document.createElement("span")
+        prank_difficulty.className = "prank_difficulty"
+        prank_difficulty.innerHTML = `Difficulty: ${pranks[i].difficulty} `
+
+        prank_info.appendChild(prank_rules)
+        prank_info.appendChild(prank_location)
+        prank_info.appendChild(prank_person)
+        prank_info.appendChild(prank_difficulty)
+        new_title.appendChild(prank_info)
+
+        new_title.addEventListener('click', (event) => {
+            if (event.target.childNodes[1].style.display == "flex") {
+                event.target.childNodes[1].style.display = "none"
+            }else if (event.target.childNodes[1].style.display == "none"){
+                event.target.childNodes[1].style.display ="flex"
+            }            console.log(event.target.childNodes[1].style.display)
+        })
+
+
+        parent.appendChild(new_title)
+        
+
+    }
+
+
 </script>
 </html>
