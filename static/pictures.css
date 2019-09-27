@@ -1,58 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffdf;
-    /* display: flex;
-    justify-content: center; */
-  }
-/* 
-
-.content-wrapper > .inner-content-wrapper {
-    
-    width: 1000px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.content-wrapper > .inner-content-wrapper > .picture-wrapper {
-    border: 1px solid black;
-    height: 450px;
-    width: 600px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 8px 6px 6px 1px rgba(0, 0, 0, .4);
-}
-
-.content-wrapper > .inner-content-wrapper > .picture-wrapper > .picture img {
-    height: 390px;
-    width: 390px
-    
-
-    
-}
-
-.content-wrapper > .inner-content-wrapper > .description-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: 600px;
-    
-
-}
-
-.content-wrapper > .inner-content-wrapper > .description-wrapper p {
-    color: #6C40AD;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-} */
+    background-color: #6C40AD;
+    background: repeating-linear-gradient(
+  45deg,
+  #6c40ad,
+  #7a4eba 10px,
+  #a97ceb 10px,
+  #512691 20px
+);}
 
 .squares-wrapper {
     margin-top: 35px;
@@ -72,18 +28,18 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: -4px;
+    background-color: #ffffdf
 }
 
 .square > .img-wrapper img {
     width: 100%;
     height: 400px;
+    box-shadow: 0px 11px 9px 1px rgba(0, 0, 0, .4);
+    
     /* border: 2px solid #6C40AD; */
     
 }
 
-.square > .img-wrapper {
-        /* border: 2px solid #6C40AD; */
-}
 
 .squares-wrapper > .squares > .square > .square-text-wrapper {
     
@@ -95,6 +51,25 @@ body {
     color: #6C40AD;
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 1.2em;
-    
+    text-align: center;
 
+}
+
+#left {
+    background-color: #ffffc9;
+}
+
+.header-wrapper {
+    margin-top: 35px;
+    background-color: #ffffdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 600px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
 }
