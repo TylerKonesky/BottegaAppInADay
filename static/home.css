@@ -4,9 +4,14 @@ body {
 }
 
 .center {
-    background-color: #FFED4F;
+    background-color: none;
+    height: 500px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
 .daily-prank {
     display: flex;
     justify-content: center;
@@ -27,11 +32,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFED4F;
+    background-color: #6C40AD;
     height: 300px;
     margin-top: -4px;
+    color: #FFED4F;
+    font-size: 0.8em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .footer .disclosure {
-    color: #6C40AD;
+    color: #FFED4F;
 }
